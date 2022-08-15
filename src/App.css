@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@font-face {
+  font-family: "ITC";
+  src: url('./assets/fonts/itc-benguiat-bold.otf');
+}
+
+:root{
+  --swiper-theme-color: #FF1515;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content{
+  max-width: 1400px;
+  margin: auto;
+  padding: 30px 100px;
+}
+
+.clouds{
+  background-image: url('./assets/img/Clouds.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.responsive{
+  display: none;
+}
+
+/* NAVBAR */
+header img{
+  width: 100px;
+}
+
+/* HOME */
+.home .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 500px;
+  padding-top: 0;
+}
+
+/* LEFT */
+.home .left{
+  width: 28%;
+  height: 100%;
+}
+
+.home .left .card{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #FF1515;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .7);
+}
+
+/* RIGHT */
+.home .right{
+  position: relative;
+  width: 70%;
+  height: 100%;
+}
+
+.home .right .cover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.72);
+  border-radius: 10px;
+}
+
+.home .right .player{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: url('./assets/img/Player.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.home .right .player .logo-stranger{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.home .right .player .logo-stranger img{
+  width: 70px;
+}
+
+.home .right .player .pin{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  width: 53px;
+  height: 67px;
+  top: 0;
+  right: 0;
+  border-radius: 0 10px 0 0;
+  background-color: #FF1515;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.home .right .player .play-btn{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  color: #FFFFFF;
+}
+
+.home .right .player .play-btn svg{
+  cursor: pointer;
+}
+
+.home .right .classification{
+  position: absolute;
+  top: 0;
+  right: -78px;
+  width: 60px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  padding: 5px;
+  text-align: center;
+}
+
+.home .right .classification .age{
+  padding: 10px;
+  background-color: #FF1515;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.home .right .classification .year{
+  font-weight: 800;
+  color: #3A3031;
+}
+
+/* CAST */
+.cast .title h1{
+  font-family: 'ITC', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.cast .cast-container{
+  position: relative;
+}
+
+.cast .cast-container .cast-title{
+  width: 100%;
+}
+
+.cast .cast-container .cast-title h1{
+  position: absolute;
+  font-family: 'ITC', sans-serif;
+  font-size: 120px;
+  font-weight: 900;
+  letter-spacing: -6px;
+  color: #FFFFFF;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.cast-swiper{
+  position: relative;
+  margin-top: 110px;
+}
+
+.cast-swiper img{
+  width: 93%;
+  padding-bottom: 15px;
+}
+
+.cast-swiper .hover-name{
+  display: none;
+}
+
+.swiper-slide:hover .hover-name{
+  display: block;
+  position: absolute;
+  width: 93%;
+  height: 93%;
+  background-image: url('./assets/img/paper-texture.jpg');
+  background-position: center;
+  background-size: cover;
+  top: 0;
+}
+
+.swiper-slide:hover .hover-name .name{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide:hover .hover-name .name p{
+  font-family: 'Mr Dafoe', sans-serif;
+  font-size: 40px;
+  color: #332B29;
+  cursor: default;
+}
+
+.swiper-pagination{
+  top: unset !important;
+  bottom: 0;
+}
+
+.swiper-pagination-progressbar{
+  background-color: #D5CCBE;
+}
+
+/* SEASONS */
+.seasons{
+  background-color: #10080B;
+}
+
+.seasons .season-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.seasons .season-container .poster{
+  width: 45%;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #1F1C1C;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .7);
+}
+
+.seasons .season-container .poster img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.seasons .season-container .poster .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seasons .season-container .poster .logo img{
+  width: 60px;
+  margin-top: 10px;
+}
+
+.seasons .season-info{
+  width: 45%;
+}
+
+.seasons .season-info .title{
+  display: flex;
+  align-items: flex-end;
+}
+
+.seasons .season-info .title h1{
+  font-family: 'ITC', sans-serif;
+  font-size: 28px;
+  color: #FFFFFF;
+  margin-right: 9px;
+}
+
+.seasons .season-info .title span{
+  font-size: 18px;
+  color: #FFFFFF;
+  padding-bottom: 2px;
+}
+
+.seasons .season-info .release{
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 5px;
+}
+
+.seasons .season-info .release .date{
+  color: #FFFFFF;
+}
+
+.seasons .season-info .release svg{
+  font-size: 10px;
+  margin: 0 10px;
+}
+
+.seasons .season-info .sinopse{
+  margin: 30px 0;
+}
+
+.seasons .season-info .sinopse p{
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.seasons .season-info .button{
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #FF1515;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer{
+  height: 80px;
+  background-color: #FFFFFF;
+  border-radius: 10% 10% 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .logo{
+  display: flex;
+  align-items: center;
+}
+
+footer .logo img{
+  width: 70px;
+}
+
+footer .logo svg{
+  font-size: 11px;
+  color: #3A3031;
+  margin: 0 20px;
+}
+
+footer .logo .fox{
+  width: 37px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 1190px){
+  body{
+    background-color: #10080B;
+  }
+  .main{
+    display: none;
+  }
+  .responsive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .responsive p{
+    font-family: 'ITC', sans-serif;
+    font-size: 5vw;
+    color: #D5CCBE;
+  }
+}
